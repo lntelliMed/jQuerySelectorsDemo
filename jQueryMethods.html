@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Methods</title>
+	<script type="text/javascript" src="lib/jquery-3.2.1.js"></script>
+</head>
+<body>
+<h1>jQuery Methods Demo Page</h1>
+<input type="text" placeholder="your name">	
+
+<ul>
+	<li>Skittles</li>
+	<li>Starbust</li>
+	<li>Twix</li>
+</ul>
+
+<script type="text/javascript">
+	$("h1").text();
+	$("ul").text();
+	$("li").text();
+	$("h1").text("New Text!!");
+	$("li").text("Lucky the dog is adorable!");
+
+	$("ul").html();
+	$("ul").html("<li>Your UL Has Been Hacked!</li><li>Lucky is still adorable!</li>");
+	$("li").html("<a href='http://google.com'>click me to go to google</a>");
+
+</script>
+</body>
+</html>
