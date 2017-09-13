@@ -3,6 +3,20 @@
 <head>
 	<title>jQuery Methods</title>
 	<script type="text/javascript" src="lib/jquery-3.2.1.js"></script>
+	<style type="text/css">
+		.correct {
+			color: green;
+		}
+		.wrong {
+			color: red;
+			background-color: pink;
+		}
+		.done {
+			color: gray;
+			text-decoration: line-through;
+		}
+
+	</style>
 </head>
 <body>
 <h1>jQuery Methods Demo Page</h1>
@@ -46,21 +60,23 @@
 	// $("input").attr("type", "color");
 	// $("input").attr("type", "checkbox");
 
-	$("img").css("width", "200px");
-	$("img:first-of-type").attr("src", "http://f9view.com/wp-content/uploads/2013/07/Cute-Cats-Images-and-HD-Wallpapers-Free-Download_1.jpg");
+	// $("img").css("width", "200px");
+	// $("img:first-of-type").attr("src", "http://f9view.com/wp-content/uploads/2013/07/Cute-Cats-Images-and-HD-Wallpapers-Free-Download_1.jpg");
+	// $("img").last().attr("src", "http://f9view.com/wp-content/uploads/2013/07/Cute-Cats-Images-and-HD-Wallpapers-Free-Download_1.jpg");
+	// $("img").attr("src", "http://f9view.com/wp-content/uploads/2013/07/Cute-Cats-Images-and-HD-Wallpapers-Free-Download_1.jpg");
 
-	$("img").last().attr("src", "http://f9view.com/wp-content/uploads/2013/07/Cute-Cats-Images-and-HD-Wallpapers-Free-Download_1.jpg");
+	// $("input").val();
+	// $("input").val("Hello!");
+	// $("input").val("");
 
+	// $("select");
+	// $("select").val();
 
-	$("img").attr("src", "http://f9view.com/wp-content/uploads/2013/07/Cute-Cats-Images-and-HD-Wallpapers-Free-Download_1.jpg");
+	$("h1").addClass("correct");
+	$("h1").toggleClass("correct");
 
-
-	$("input").val();
-	$("input").val("Hello!");
-	$("input").val("");
-
-	$("select");
-	$("select").val();
+	$("li").addClass("done");
+	$("li").first().removeClass("done");
 
 
 
