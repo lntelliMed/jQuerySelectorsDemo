@@ -8,22 +8,63 @@
 <h1>jQuery Methods Demo Page</h1>
 <input type="text" placeholder="your name">	
 
+<select>
+	<option>Ostrich</option>
+	<option>Turtle</option>
+	<option>Toad</option>
+</select>
+
 <ul>
 	<li>Skittles</li>
 	<li>Starbust</li>
 	<li>Twix</li>
 </ul>
 
-<script type="text/javascript">
-	$("h1").text();
-	$("ul").text();
-	$("li").text();
-	$("h1").text("New Text!!");
-	$("li").text("Lucky the dog is adorable!");
+<img src="http://images.all-free-download.com/images/graphicthumb/cute_dog_photo_picture_8_168842.jpg">
+<img src="http://images.all-free-download.com/images/graphicthumb/cute_dog_photo_picture_8_168842.jpg">
+<img src="http://images.all-free-download.com/images/graphicthumb/cute_dog_photo_picture_8_168842.jpg">
 
-	$("ul").html();
-	$("ul").html("<li>Your UL Has Been Hacked!</li><li>Lucky is still adorable!</li>");
-	$("li").html("<a href='http://google.com'>click me to go to google</a>");
+<script type="text/javascript">
+
+	// $("h1").text();
+	// $("ul").text();
+	// $("li").text();
+	// $("h1").text("New Text!!");
+	// $("li").text("Lucky the dog is adorable!");
+
+	// $("ul").html();
+	// $("ul").html("<li>Your UL Has Been Hacked!</li><li>Lucky is still adorable!</li>");
+	// $("li").html("<a href='http://google.com'>click me to go to google</a>");
+
+	// $("img").css("width");
+	// $("img").css("width", "200px");
+	// $("img").attr("src");
+	// $("img").attr("src", "http://f9view.com/wp-content/uploads/2013/07/Cute-Cats-Images-and-HD-Wallpapers-Free-Download_1.jpg");
+
+	// $("input");
+	// $("input").attr("type");
+	// $("input").attr("type", "color");
+	// $("input").attr("type", "checkbox");
+
+	$("img").css("width", "200px");
+	$("img:first-of-type").attr("src", "http://f9view.com/wp-content/uploads/2013/07/Cute-Cats-Images-and-HD-Wallpapers-Free-Download_1.jpg");
+
+	$("img").last().attr("src", "http://f9view.com/wp-content/uploads/2013/07/Cute-Cats-Images-and-HD-Wallpapers-Free-Download_1.jpg");
+
+
+	$("img").attr("src", "http://f9view.com/wp-content/uploads/2013/07/Cute-Cats-Images-and-HD-Wallpapers-Free-Download_1.jpg");
+
+
+	$("input").val();
+	$("input").val("Hello!");
+	$("input").val("");
+
+	$("select");
+	$("select").val();
+
+
+
+	
 
 </script>
 </body>
