@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Events</title>
+	<script type="text/javascript" src="lib/jquery-3.2.1.js"></script>
+</head>
+<body>
+<h1>jQuery Events Demo!</h1>
+<h2>click() & keypress()</h2>
+
+<input type="text">
+<button>Don't Click Me!</button>
+<button>Seriously, Don't Click Me!</button>
+<button>This is Your Last Warning!</button>
+
+<hr>
+
+<h2 id="onEventH2">on()</h2>
+<input id="onEventInput" type="text">
+<button id="onEventButton">Click Me!</button>
+
+<script type="text/javascript">
+	$("h2").click(function(){
+		alert("You clicked on h2");
+	});
+
+	$("button").click(function(){
+		alert("You clicked on button " + $(this).text());
+	$(this).css("background", "pink");
+	});
+
+	$("input[type='text']").keypress(function(event){
+		console.log(event);
+		if(event.which === 13){
+			alert("You clicked enter!");
+		}
+	});
+
+
+	
+	$("#onEventH2").on("click", function(){
+		console.log("Click event has been triggered on h2!");
+		$(this).css("background", "purple");
+	});
+
+	$("#onEventInput").on("keypress", function(){
+		console.log("Keypress event has been triggered on input!");
+	});
+
+	$("#onEventButton").on("mouseenter", function(){
+		console.log("Mouseenter event has been triggered on button!");
+		$(this).css("font-weight", "bold");
+	});
+
+	$("#onEventButton").on("mouseleave", function(){
+		console.log("Mouseleave event has been triggered on button!");
+		$(this).css("font-weight", "normal");
+	});
+
+</script>
+
+</body>
+</html>
